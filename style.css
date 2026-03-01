@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #111;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff4c00;
+}
+
+/* HERO */
+header {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #111, #1c1c1c);
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #ff4c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #ff7a33;
+}
+
+/* SECTIONS */
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* EVENTS GRID */
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.event-card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ff4c00;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    background: #252525;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
